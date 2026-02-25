@@ -1,0 +1,10 @@
+Variavel capaz de receber apenas um valor por vez
+Quando falamos de grandes valores, quantidade alta, ela se torna inviável 
+A estrutura de dados serve para construir novos tipos.
+
+Vetor - Unidimensional
+Matriz - Bidimensional
+
+Filas - FIFO(first in, first out) - as filas funcionam como o FIFO básciamente
+
+Pilha - LIFO(last in, last out) - o ultimo elemento a entrar é o primeiro a sair 
