@@ -1,0 +1,13 @@
+Complexidade de algoritmos: 
+
+Estudar comportamento de algoritmo no tempo e no espaço(custo computacional).
+Complexidade é o "dinheiro" ele define o preço e os recursos que o computador vai usar.
++ Complexidade + Caro 
+
+Complexidade de espaço: Quantidade de memória(RAM) para algoritmo terminar execução.
+
+
+Regra do "Pior Caso": 
+Quando aumenta muito a entrada de dados(Notação Big O)
+
+algoritmo linear : Se aumentar entrada ele vai funcionar conforme a entrada,
