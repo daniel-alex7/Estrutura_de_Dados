@@ -5,9 +5,13 @@ Complexidade é o "dinheiro" ele define o preço e os recursos que o computador 
 + Complexidade + Caro 
 
 Complexidade de espaço: Quantidade de memória(RAM) para algoritmo terminar execução.
-
+---Codigo GaleriaFotos
 
 Regra do "Pior Caso": 
 Quando aumenta muito a entrada de dados(Notação Big O)
 
-algoritmo linear : Se aumentar entrada ele vai funcionar conforme a entrada,
+Algoritmo linear : Se aumentar entrada ele vai funcionar conforme a entrada
+---Codigo LinearPesquisa
+
+
+Algoritmo exponencial : 
