@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TSPCompletoComentado",
+            "request": "launch",
+            "mainClass": "TSPCompletoComentado",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
+            "name": "TSPComPoda",
+            "request": "launch",
+            "mainClass": "TSPComPoda",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "ExponencialFibonacci",
             "request": "launch",
             "mainClass": "ExponencialFibonacci",
