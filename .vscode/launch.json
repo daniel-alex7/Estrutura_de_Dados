@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "cidades",
+            "request": "launch",
+            "mainClass": "cidades",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "TSPCompletoComentado",
             "request": "launch",
             "mainClass": "TSPCompletoComentado",

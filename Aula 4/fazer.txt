@@ -1,0 +1,13 @@
+São Paulo
+Santos 
+Ribeirão Preto
+
+0 - Campinas
+
+exibe lista
+
+exibir a cidade indice 2
+
+alterar a cidade no índice 3 para Mirassol
+
+exibir a lista atualizada
