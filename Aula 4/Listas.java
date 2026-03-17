@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class cidades {
+public class Listas {
    
     public static void main(String[] args) {
         ArrayList<String> cidades = new ArrayList<String>(
@@ -33,7 +33,7 @@ public class cidades {
         }
 
         System.out.println();
-
+        // Esse é melhor que o laço de cima: 
         System.out.println("Lista de cidades com Laço For-Each");
         for (String cidade: cidades){
             System.out.println(cidade);

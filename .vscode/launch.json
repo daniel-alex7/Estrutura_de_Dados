@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Buscas",
+            "request": "launch",
+            "mainClass": "Buscas",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "cidades",
             "request": "launch",
             "mainClass": "cidades",
