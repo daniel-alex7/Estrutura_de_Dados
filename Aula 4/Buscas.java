@@ -1,13 +1,13 @@
 public class Buscas {
     public static void main(String[] args) {
         // Busca sequencial
-        double[] vetorDesordenado = { 2, 5, 4, 6, 3, 4, 6, 7, 1.2, 4.2 };
+        double[] vetorDesordenado = { 4.3, 6.1, 0.1, 1.9, 2.4, 7.2, 5.5};
         int pos = buscaSequencial(vetorDesordenado, 2.4);
         System.out.println("Localizado na posição (indice): " + pos);
 
 
         // Bsuca binária 
-        double[] vetorOrdenado = {1, 2, 3, 4, 5, 6, 7};
+        double[] vetorOrdenado = {1, 2, 4, 8, 10, 11, 12};
         pos = buscaBinaria(vetorOrdenado, 1);
         System.out.println("Localizado no vetor ordenado na posição: "+ pos);
 
