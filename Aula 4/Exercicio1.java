@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Exercicio {
+public class Exercicio1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -22,6 +22,7 @@ public class Exercicio {
         double[] valores = new double[n];
         double ultimo = Double.NEGATIVE_INFINITY;
 
+        // Verificando valores digitados
         for (int i = 0; i < n; ) {
             System.out.print("Digite o valor " + (i + 1) + ": ");
             if (!sc.hasNextDouble()) {
@@ -29,6 +30,8 @@ public class Exercicio {
                 sc.next();
                 continue;
             }
+
+            // aqui impede que valor digitado seja menor do que o ultimo valor digitado
             double v = sc.nextDouble();
             if (v < ultimo) {
                 System.out.println("Valor menor que o último informado (último = " + ultimo + "). Digite outro valor.");
@@ -39,8 +42,12 @@ public class Exercicio {
             i++;
         }
 
+        //print em valores que foram digitados
+
         System.out.println("Valores digitados: " + Arrays.toString(valores));
         System.out.println();
+
+        //pesquisa iniciada
 
         System.out.print("Digite um número real para pesquisar: ");
         while (!sc.hasNextDouble()) {
@@ -67,6 +74,8 @@ public class Exercicio {
         }
         return -1;
     }
+
+    //Utilizando a busca binária
 
     public static int buscaBinaria(double[] vetor, double valorPesquisado) {
         final double EPS = 1e-9;
