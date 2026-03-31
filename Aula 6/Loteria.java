@@ -11,7 +11,7 @@ public class Loteria {
         String[] apostadores = new String[10];
         int[][] apostas = new int[10][4];
 
-        // Cadastro
+        
         for (int i = 0; i < 10; i++) {
             System.out.print("Digite o nome do apostador: ");
             apostadores[i] = sc.nextLine();
@@ -21,7 +21,7 @@ public class Loteria {
                 System.out.print("Número " + (j + 1) + ": ");
                 apostas[i][j] = sc.nextInt();
             }
-            sc.nextLine(); // limpar buffer
+            sc.nextLine(); 
         }
 
         

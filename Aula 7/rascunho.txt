@@ -1,0 +1,12 @@
+Modularização - um metodo para cada coisa
+
+Usar vetor ao invés de arraylist
+
+
+Bubble Sort: Funciona comparando pares adjacentes e trocando-os se estiverem na ordem errada. 
+O maior elemento "flutua" para o final da lista a cada iteração completa.
+
+
+Insertion Sort: Funciona de forma similar a ordenar cartas na mão. 
+Ele assume que o primeiro elemento já está ordenado e insere cada elemento subsequente na posição correta 
+dentro da sublista já ordenada à esquerda. 
