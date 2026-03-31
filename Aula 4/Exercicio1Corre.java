@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Exercicio1Corre {
     public static void main(String[] args) {
-        double valoresDigitados[] = receberValores();
     }
 
     public static double[] receberValores(){
@@ -30,6 +29,7 @@ public class Exercicio1Corre {
                 i--;
             }
         }
+        return valores;
 
     }
     

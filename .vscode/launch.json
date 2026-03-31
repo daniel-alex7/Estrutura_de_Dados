@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Loteria",
+            "request": "launch",
+            "mainClass": "Loteria",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
+            "name": "Listas",
+            "request": "launch",
+            "mainClass": "Listas",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
+            "name": "frutas",
+            "request": "launch",
+            "mainClass": "frutas",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "Exercicio1Corre",
             "request": "launch",
             "mainClass": "Exercicio1Corre",
