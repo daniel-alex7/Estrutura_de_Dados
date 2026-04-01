@@ -33,14 +33,14 @@ public class ordernacao3 {
 
      public void selectionSortInvertido(int vetor []) {
         for (int i = 0; i < vetor.length - 1; i++) {
-            int min = i;
+            int max = i;
             for (int j = i+1; j < vetor.length; j++) {
-                if ( vetor[j] < vetor[min] ) min = j;  //guardo a 'posição' do menor valor
+                if ( vetor[j] < vetor[max] ) max = j;  //guardo a 'posição' do menor valor
             }            
-            //troca o menor valor (que está na posição min) pelo vetor[i]
-            double temp = vetor[i];
-            vetor[i] = vetor[min];
-            vetor[min] = (int) temp;
+            //troca o maior valor (que está na posição min) pelo vetor[i]
+            int temp = vetor[i];
+            vetor[i] = vetor[max];
+            vetor[max] = temp;
         }
     }
 
