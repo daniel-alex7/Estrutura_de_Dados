@@ -21,7 +21,6 @@ public class Loteria {
                 System.out.print("Número " + (j + 1) + ": ");
                 apostas[i][j] = sc.nextInt();
             }
-            sc.nextLine(); 
         }
 
         

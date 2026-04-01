@@ -1,0 +1,62 @@
+
+public class ordernacao3 {
+    public static void main(String[] args) {
+        new ordernacao3();
+    }
+
+    ordernacao3() {
+        double v[] = {4.5, 45.8, 2.2, 99.9, 6.3, 2.3, -5.6, 1.2, 78.3, 39.4, 0.5, 4.3, 0.1, 54.7};       
+        System.out.println("Vetor desordenado v[]:");
+        visualizar(v);        
+        selectionSort(v); 
+        System.out.println("Vetor ordenado v[]:");
+        visualizar(v);
+        int numeros [] = {4, 2, 10, 123, -3, 32, 0, 34, 12, 91, 45, 3, 21, 87, 61};
+        selectionSortInvertido(numeros);
+        visualizar(numeros);
+        
+    }
+
+    
+    public void selectionSort(double vetor []) {
+        for (int i = 0; i < vetor.length - 1; i++) {
+            int min = i;
+            for (int j = i+1; j < vetor.length; j++) {
+                if ( vetor[j] < vetor[min] ) min = j;  //guardo a 'posição' do menor valor
+            }            
+            //troca o menor valor (que está na posição min) pelo vetor[i]
+            double temp = vetor[i];
+            vetor[i] = vetor[min];
+            vetor[min] = temp;
+        }
+    }
+
+     public void selectionSortInvertido(int vetor []) {
+        for (int i = 0; i < vetor.length - 1; i++) {
+            int min = i;
+            for (int j = i+1; j < vetor.length; j++) {
+                if ( vetor[j] < vetor[min] ) min = j;  //guardo a 'posição' do menor valor
+            }            
+            //troca o menor valor (que está na posição min) pelo vetor[i]
+            double temp = vetor[i];
+            vetor[i] = vetor[min];
+            vetor[min] = (int) temp;
+        }
+    }
+
+    void visualizar(double[] numeros) {
+        for (double num: numeros) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+    void visualizar(int[] numeros) {
+        for (double num: numeros) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+}
+
