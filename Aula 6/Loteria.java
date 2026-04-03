@@ -4,77 +4,75 @@ import java.util.Random;
 public class Loteria {
 
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        Random rand = new Random();
-
-        String[] apostadores = new String[10];
-        int[][] apostas = new int[10][4];
+        
+        
+        Scanner scan = new Scanner(System.in);
+        Random gerador = new Random();
 
         
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Digite o nome do apostador: ");
-            apostadores[i] = sc.nextLine();
+        String[] nomes = new String[10];
+        int[][] matrizApostas = new int[10][4];
+        int[] sorteados = new int[3];
+        int[] indicesGanhadores = new int[10];
+        int totalGanhadores = 0;
 
-            System.out.println("Digite 4 números entre 0 e 9:");
+        // Leitura dos dados
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Nome do apostador " + (i + 1) + ": ");
+            nomes[i] = scan.nextLine();
+
+            System.out.println("Informe 4 números (0 a 9):");
             for (int j = 0; j < 4; j++) {
-                System.out.print("Número " + (j + 1) + ": ");
-                apostas[i][j] = sc.nextInt();
+                System.out.print("Valor " + (j + 1) + ": ");
+                matrizApostas[i][j] = scan.nextInt();
             }
+            scan.nextLine();
+            System.out.println("--------------------");
         }
 
-        
-        int[] sorteio = new int[3];
-        System.out.print("\nNúmeros sorteados: ");
+        // Sorteio dos 3 números
+        System.out.print("\n>>> NÚMEROS SORTEADOS: ");
         for (int i = 0; i < 3; i++) {
-            sorteio[i] = rand.nextInt(10);
-            System.out.print(sorteio[i] + " ");
+            sorteados[i] = gerador.nextInt(10);
+            System.out.print(sorteados[i] + " ");
         }
 
-        
-        int[] ganhadores = new int[10];
-        int qtdGanhadores = 0;
-
+       
         for (int i = 0; i < 10; i++) {
-            int acertos = 0;
-
+            int contAcertos = 0;
             for (int j = 0; j < 4; j++) {
                 for (int k = 0; k < 3; k++) {
-                    if (apostas[i][j] == sorteio[k]) {
-                        acertos++;
+                    if (matrizApostas[i][j] == sorteados[k]) {
+                        contAcertos++;
+                        break; 
                     }
                 }
             }
 
-            if (acertos >= 2) {
-                ganhadores[qtdGanhadores] = i;
-                qtdGanhadores++;
+            if (contAcertos >= 2) {
+                indicesGanhadores[totalGanhadores] = i;
+                totalGanhadores++;
             }
         }
 
         
-        if (qtdGanhadores > 0) {
-            double premio = 1000000.0 / qtdGanhadores;
-
-            System.out.println("\n\nGanhadores:");
-            for (int i = 0; i < qtdGanhadores; i++) {
-                int indice = ganhadores[i];
-
-                System.out.println("Nome: " + apostadores[indice]);
-
-                System.out.print("Aposta: ");
-                for (int j = 0; j < 4; j++) {
-                    System.out.print(apostas[indice][j] + " ");
+        if (totalGanhadores > 0) {
+            double premioIndividual = 1000000.0 / totalGanhadores;
+            System.out.println("\n--- RESULTADO FINAL ---");
+            for (int i = 0; i < totalGanhadores; i++) {
+                int pos = indicesGanhadores[i];
+                System.out.println("Ganhador: " + nomes[pos]);
+                System.out.print("Números da aposta: ");
+                for (int n = 0; n < 4; n++) {
+                    System.out.print(matrizApostas[pos][n] + " ");
                 }
-
-                System.out.println("\nValor ganho: R$ " + premio);
-                System.out.println("----------------------");
+                System.out.printf("\nPrêmio: R$ %.2f\n", premioIndividual);
+                System.out.println("......................");
             }
-
         } else {
-            System.out.println("\nNenhum ganhador.");
+            System.out.println("\nNão houve ganhadores nesta rodada.");
         }
 
-        
+       
     }
 }
