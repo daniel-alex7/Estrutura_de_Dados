@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fatorial",
+            "request": "launch",
+            "mainClass": "Fatorial",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "ordernacao3",
             "request": "launch",
             "mainClass": "ordernacao3",
