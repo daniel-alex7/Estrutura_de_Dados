@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pilha_teste",
+            "request": "launch",
+            "mainClass": "A06_TAD.pilha_teste",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "Maximo",
             "request": "launch",
             "mainClass": "Maximo",

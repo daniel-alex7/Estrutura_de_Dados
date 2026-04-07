@@ -11,7 +11,7 @@ public class Maximo {
 		int a[] = {12, 11, 21, 89, 99, 45, 89, 12, 24, 6, 70, 1002, 999, 987};
 		System.out.println( "Maior dos valores 1: " + maximoIterativo(a)); 
 		System.out.println( "Maior dos valores 2: " + maximoIterativo(a) +
-			maximoRecursivo(a, 0, a.length-1, 0));
+			maximoRecursivo(a, 0, 4, 0));
     	}
 	
 	public int maximoRecursivo (int vet[], int inicio, int fim, int nivel) { // método recursivo
