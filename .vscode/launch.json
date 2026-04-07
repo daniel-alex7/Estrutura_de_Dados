@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Maximo",
+            "request": "launch",
+            "mainClass": "Maximo",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "Fatorial",
             "request": "launch",
             "mainClass": "Fatorial",
