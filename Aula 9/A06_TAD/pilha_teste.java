@@ -1,3 +1,5 @@
+package A06_TAD;
+
 public class pilha_teste {
     public static void main(String[] args) {
       Pilha pilha = new Pilha();

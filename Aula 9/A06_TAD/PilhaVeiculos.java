@@ -1,3 +1,5 @@
+package A06_TAD;
+
 public class PilhaVeiculos {
     private Pilha p = null;  //atributo da classe
     
