@@ -1,21 +1,23 @@
 package A06_TAD;
 
+//Implements TAD_PILHA
+
 public class Pilha implements TAD_Pilha {
 
-    private int topo;	//Topo da Pilha
+    private int topo;	//Topo da Pilha - Saber ultimo que entrou pois é o primeiro que vai sair
     private int MAX;	//Tamanho da Pilha
-    private Object memo[];	//Elementos da Pilha (objeto genérico)
+    private Object memo[];	//Elementos da Pilha (objeto genérico) --> serve para dados extremamente abstrato 
 
     //Método construtor que inicializa a Pilha no estado vazia
     public Pilha() {
-        topo = -1;
-        MAX = 30;
-        memo = new Object[MAX];
+        topo = -1; // o 0 é uma posição de mmeória o -1 não
+        MAX = 30; 
+        memo = new Object[MAX]; //Observa se está batendo número máximo ou não
     }
 
     //Método construtor que inicializa a Pilha com tamanho máximo desejado
     public Pilha(int qtde) {
-        topo = -1;
+        topo = -1; 
         MAX = qtde;
         memo = new Object[MAX];
     }
