@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PilhaEncadeada",
+            "request": "launch",
+            "mainClass": "Aula10.PilhaEncadeada",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
+            "name": "PilhaEncadeada",
+            "request": "launch",
+            "mainClass": "PilhaEncadeada",
+            "projectName": "Estrutura_de_Dados_8222127e"
+        },
+        {
+            "type": "java",
             "name": "pilha_teste",
             "request": "launch",
             "mainClass": "A06_TAD.pilha_teste",

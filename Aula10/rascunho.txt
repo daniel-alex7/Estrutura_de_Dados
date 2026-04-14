@@ -1,0 +1,12 @@
+Pilhas dinâmica encadeadas
+
+-- Alocar memória a medida que é preciso
+Stack - objeto que gera e processa Pilhas
+
+Acesso apenas o topo da pilha (LIFO) -- UTILIZAREMOS NÓ ENTRELAÇADOS ONDE 
+CADA NÓ RECONHECE A PRÓXIMA POSIÇÃO
+NO PRÓXIMO NÓ
+
+
+
+
